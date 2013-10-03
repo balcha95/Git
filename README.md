@@ -1,4 +1,5 @@
 Using Git
 ===============
 
-`asd`
+See where Git is located:
+`which git`
