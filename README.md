@@ -4,7 +4,7 @@ Using Git
 Global Settings
 -----------
 
-Related Tutorial: https://gist.github.com/hofmannsven/6814278
+Related Intro: https://gist.github.com/hofmannsven/6814278
 
 
 Setup
@@ -189,3 +189,50 @@ Compare without caring about all spaces:
 
 Useful comparings:
 `git diff --stat --summary 6eb715d..HEAD`
+
+
+Collaborate
+-----------
+
+Show remote:
+`git remote`
+
+Show remote details:
+`git remote -v`
+
+Add remote origin from GitHub:
+`git remode add origin https://github.com/user/project.git`
+
+Remove origin:
+`git remote rm origin`
+
+Show remote branches:
+`git branch -r`
+
+Show all branches:
+`git branch -a`
+
+Compare:
+`git diff origin/master..master`
+
+Push (set default with `-u`):
+`git push -u origin master`
+
+Push to default:
+`git push origin master`
+
+Fetch:
+`git fetch origin`
+
+Merge fetched commits:
+`git merge origin/master`
+
+Clone to localhost:
+`git clone https://github.com/user/project.git`
+
+Clone to localhost folder:
+`git clone https://github.com/user/project.git dir/folder`
+
+Relete remote branch (push nothing):
+`git push origin :branchname` or:
+`git push origin --delete branchname`
