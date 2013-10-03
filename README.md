@@ -58,7 +58,41 @@ Restore file from a custom commit:
 `git checkout 6eb715d -- index.html`
 
 
-Branching
+Reset
+-----------
+
+Go back to commit:
+`git revert 073791e7dd71b90daa853b2c5acc2c925f02dbc6`
+
+Soft reset (move HEAD only; neither staging nor working dir is changed):
+`git reset --soft 073791e7dd71b90daa853b2c5acc2c925f02dbc6`
+
+Mixed reset (move HEAD and change staging to match repo; does not affect working dir):
+`git reset --mixed 073791e7dd71b90daa853b2c5acc2c925f02dbc6`
+
+Hard reset (move HEAD and change staging dir and working dir to match repo):
+`git reset --hard 073791e7dd71b90daa853b2c5acc2c925f02dbc6`
+
+Update & Delete
+-----------
+
+Test-Delete untracked files:
+`git clean -n`
+
+Delete untracked files (not staging):
+`git clean -f`
+
+Unstage (undo adds):
+`git reset HEAD index.html`
+
+Commit to most recent commit:
+`git commit --amend -m "Message"`
+
+Update most recent commit message:
+`git commit --amend -m "New Message"`
+
+
+Branch
 -----------
 
 Show branches:
@@ -104,7 +138,7 @@ Abort merge:
 `git merge --abort`
 
 
-Stashing
+Stash
 -----------
 
 Put in stash:
@@ -189,7 +223,7 @@ Show history of commits as graph-summary:
 `git log --oneline --graph --all --decorate`
 
 
-Compare versions
+Compare
 -----------
 
 Compare modified files:
