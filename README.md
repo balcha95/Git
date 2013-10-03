@@ -45,6 +45,72 @@ Commit changes:
 Add and commit in one step:
 `git commit -am "Message"`
 
+Remove files from Git:
+`git rm index.html`
+
+Move or rename files:
+`git mv index.html dir/index_new.html`
+
+Undo modifications (restore files from latest commited version):
+`git checkout -- index.html`
+
+Restore file from a custom commit:
+`git checkout 6eb715d -- index.html`
+
+
+Branching
+-----------
+
+Show branches:
+`git branch`
+
+Create branch:
+`git branch branchname`
+
+Change to branch:
+`git checkout branchname`
+
+Create and change to new branch:
+`git checkout -b branchname`
+
+Rename branch:
+`git branch -m branchname new_branchname` or:
+`git branch --move branchname new_branchname`
+
+Delete merged branch (only possible if not HEAD):
+`git branch -d branchname` or:
+`git branch --delete branchname`
+
+Delete not merged branch:
+`git branch -D branch_to_delete`
+
+
+Merge
+-----------
+
+True merge (fast forward):
+`git merge branchname`
+
+Merge to master (only if fast forward):
+`git merge --ff-only branchname`
+
+Merge to master (forc a new commit):
+`git merge --no-ff branchname`
+
+Abort merge:
+`git merge --abort`
+
+
+Gitignore & Gitkeep
+-----------
+
+Add or edit gitignore: 
+`nano .gitignore`
+
+Track empty dir: 
+`touch dir/.gitkeep`
+
+
 Log
 -----------
 
@@ -91,6 +157,10 @@ Show history of commits as graph:
 Show history of commits as graph-summary:
 `git log --oneline --graph --all --decorate`
 
+
+Compare versions
+-----------
+
 Compare modified files:
 `git diff`
 
@@ -100,9 +170,22 @@ Compare modified files and highlight changes only:
 Compare modified files within the staging area:
 `git diff --staged`
 
-Remove files from Git:
-`git rm index.html`
+Compare commits:
+`git diff 6eb715d`
+`git diff 6eb715d..HEAD`
+`git diff 6eb715d..537a09f`
 
-Move or rename files:
-`git mv index.html dir/index_new.html`
+Compare commits of file:
+`git diff 6eb715d index.html`
+`git diff 6eb715d..537a09f index.html`
 
+Compare without caring about spaces:
+`git diff -b 6eb715d..HEAD` or:
+`git diff --ignore-space-change 6eb715d..HEAD`
+
+Compare without caring about all spaces:
+`git diff -w 6eb715d..HEAD` or:
+`git diff --ignore-all-space 6eb715d..HEAD`
+
+Useful comparings:
+`git diff --stat --summary 6eb715d..HEAD`
