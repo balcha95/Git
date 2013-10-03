@@ -4,7 +4,7 @@ Using Git
 Global Settings
 -----------
 
-Related Intro: https://gist.github.com/hofmannsven/6814278
+Related Setup: https://gist.github.com/hofmannsven/6814278
 
 
 Setup
@@ -77,6 +77,9 @@ Rename branch:
 `git branch -m branchname new_branchname` or:
 `git branch --move branchname new_branchname`
 
+Show all completely merged branches with current branch:
+`git branch --merged`
+
 Delete merged branch (only possible if not HEAD):
 `git branch -d branchname` or:
 `git branch --delete branchname`
@@ -99,6 +102,34 @@ Merge to master (forc a new commit):
 
 Abort merge:
 `git merge --abort`
+
+
+Stashing
+-----------
+
+Put in stash:
+`git stash save "Message"`
+
+Show stash:
+`git stash list`
+
+Show stash stats:
+`git stash show stash@{0}`
+
+Show stash changes:
+`git stash show -p stash@{0}`
+
+Use custom stash item and drop it:
+`git stash pop stash@{0}`
+
+Use custom stash item and do not drop it:
+`git stash apply stash@{0}`
+
+Delete custom stash item:
+`git stash drop stash@{0}`
+
+Delete complete stash:
+`git stash clear`
 
 
 Gitignore & Gitkeep
@@ -169,6 +200,12 @@ Compare modified files and highlight changes only:
 
 Compare modified files within the staging area:
 `git diff --staged`
+
+Compare branches:
+`git diff master..branchname`
+
+Compare branches like above:
+`git diff --color-words master..branchname^`
 
 Compare commits:
 `git diff 6eb715d`
