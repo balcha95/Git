@@ -1,6 +1,0 @@
-See where Git is located:
-`which git`
-
-Get the version of Git:
-`git --version`
-

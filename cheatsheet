@@ -1,9 +1,0 @@
-Initialize Git:
-`git init`
-
-Get verything ready to commit:
-`git add .`
-
-Get custom file ready to commit:
-
-`git add filename.txt`
