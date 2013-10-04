@@ -289,7 +289,7 @@ Show remote details:
 `git remote -v`
 
 Add remote origin from GitHub:
-`git remode add origin https://github.com/user/project.git`
+`git remote add origin https://github.com/user/project.git`
 
 Remove origin:
 `git remote rm origin`
