@@ -58,6 +58,9 @@ Add and commit in one step:
 Remove files from Git:
 `git rm index.html`
 
+Update all changes:
+`git add -u`
+
 Kepp file but do not track anymore:
 `git rm --cached index.html`
 
