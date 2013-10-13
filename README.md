@@ -6,6 +6,8 @@ Global Settings
 
 Related Setup: https://gist.github.com/hofmannsven/6814278
 
+Interactive Tutorial: http://try.github.io/
+
 
 Reminder
 -----------
