@@ -16,8 +16,6 @@ Press `minus + shift + s` and `return` to chop/fold long lines!
 
 Show folder content: `ls -la`
 
-Go straight to MAMP/htdocs: `cd /Applications/MAMP/htdocs`
-
 
 Setup
 -----------
