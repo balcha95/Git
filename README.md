@@ -282,6 +282,19 @@ Useful comparings:
 `git diff --stat --summary 6eb715d..HEAD`
 
 
+Releases & Version Tags
+-----------
+
+Show all released versions:
+`git tag`
+
+Create release version:
+`git tag v1.0`
+
+Checkout a specific release version:
+`git checkout v1.0`
+
+
 Collaborate
 -----------
 
