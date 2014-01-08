@@ -288,8 +288,14 @@ Releases & Version Tags
 Show all released versions:
 `git tag`
 
+Show all released versions with comments:
+`git tag -l -n1`
+
 Create release version:
 `git tag v1.0`
+
+Create release version with comment:
+`git tag -a v1.0 -m 'Message'`
 
 Checkout a specific release version:
 `git checkout v1.0`
