@@ -344,6 +344,6 @@ Clone to localhost:
 Clone to localhost folder:
 `git clone https://github.com/user/project.git ~/dir/folder`
 
-Relete remote branch (push nothing):
+Delete remote branch (push nothing):
 `git push origin :branchname` or:
 `git push origin --delete branchname`
