@@ -6,7 +6,9 @@ Global Settings
 
 Related Setup: https://gist.github.com/hofmannsven/6814278
 
-Interactive Tutorial: http://try.github.io/
+Related Pro Tips: https://ochronus.com/git-tips-from-the-trenches/
+
+Interactive Beginners Tutorial: http://try.github.io/
 
 
 Reminder
