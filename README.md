@@ -336,6 +336,12 @@ Push to default:
 Fetch:
 `git fetch origin`
 
+Pull:
+`git pull`
+
+Pull specific branch:
+`git pull origin branchname`
+
 Merge fetched commits:
 `git merge origin/master`
 
