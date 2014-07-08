@@ -152,8 +152,11 @@ Merge to master (only if fast forward):
 Merge to master (forc a new commit):
 `git merge --no-ff branchname`
 
-Abort merge:
+Stop merge (in case of conflicts):
 `git merge --abort`
+
+Stop merge (in case of conflicts):
+`git reset --merge` // prior to v1.7.4
 
 
 Stash
