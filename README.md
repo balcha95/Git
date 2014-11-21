@@ -286,6 +286,9 @@ Compare without caring about all spaces:
 Useful comparings:
 `git diff --stat --summary 6eb715d..HEAD`
 
+Blame:
+`git blame -L10,+1 index.html`
+
 
 Releases & Version Tags
 -----------
