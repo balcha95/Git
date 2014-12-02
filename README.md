@@ -63,7 +63,7 @@ Remove files from Git:
 Update all changes:
 `git add -u`
 
-Kepp file but do not track anymore:
+Remove file but do not track anymore:
 `git rm --cached index.html`
 
 Move or rename files:
