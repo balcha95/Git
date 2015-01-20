@@ -318,10 +318,10 @@ Show remote:
 Show remote details:
 `git remote -v`
 
-Add remote origin from GitHub:
+Add remote origin from GitHub project:
 `git remote add origin https://github.com/user/project.git`
 
-Add remote origin from server:
+Add remote origin from existing empty project on server:
 `git remote add origin ssh://root@123.123.123.123/path/to/repository/.git`
 
 Remove origin:
