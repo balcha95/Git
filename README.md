@@ -45,7 +45,7 @@ General
 Initialize Git:
 `git init`
 
-Get verything ready to commit:
+Get everything ready to commit:
 `git add .`
 
 Get custom file ready to commit:
