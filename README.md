@@ -367,3 +367,9 @@ Clone specific branch to localhost:
 Delete remote branch (push nothing):
 `git push origin :branchname` or:
 `git push origin --delete branchname`
+
+
+Troubleshooting
+-----------
+
+Ignore files that have already been committed to a Git repository: http://stackoverflow.com/a/1139797/1815847
