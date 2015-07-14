@@ -369,6 +369,11 @@ Delete remote branch (push nothing):
 `git push origin --delete branchname`
 
 
+Archive
+-----------
+Create a zip-archive: `git archive --format zip --output filename.zip master`
+
+
 Troubleshooting
 -----------
 
