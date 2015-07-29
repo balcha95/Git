@@ -384,4 +384,4 @@ Security
 -----------
 
 Prevent access to `.git` folders via `.htaccess`: `RedirectMatch 404 /\.git` 
-(more in here: http://stackoverflow.com/a/17916515/1815847)
+(more info here: http://stackoverflow.com/a/17916515/1815847)
