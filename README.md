@@ -383,5 +383,5 @@ Ignore files that have already been committed to a Git repository: http://stacko
 Security
 -----------
 
-Prevent access to `.git` folders via `.htaccess`: `RedirectMatch 404 /\.git` 
+Hide Git on the web via `.htaccess`: `RedirectMatch 404 /\.git` 
 (more info here: http://stackoverflow.com/a/17916515/1815847)
