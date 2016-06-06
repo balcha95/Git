@@ -373,6 +373,8 @@ Archive
 -----------
 Create a zip-archive: `git archive --format zip --output filename.zip master`
 
+Export/write custom log to a file: `git log --author=sven --all > log.txt`
+
 
 Troubleshooting
 -----------
