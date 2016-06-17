@@ -85,6 +85,8 @@ Go back to commit:
 Soft reset (move HEAD only; neither staging nor working dir is changed):
 `git reset --soft 073791e7dd71b90daa853b2c5acc2c925f02dbc6`
 
+Undo latest commit: `git reset --soft HEAD~ `
+
 Mixed reset (move HEAD and change staging to match repo; does not affect working dir):
 `git reset --mixed 073791e7dd71b90daa853b2c5acc2c925f02dbc6`
 
