@@ -166,6 +166,8 @@ Stop merge (in case of conflicts):
 Stop merge (in case of conflicts):
 `git reset --merge` // prior to v1.7.4
 
+Merge only one specific commit: 
+`git cherry-pick 073791e7`
 
 Stash
 -----------
