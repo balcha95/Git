@@ -355,6 +355,9 @@ Push to default:
 Fetch:
 `git fetch origin`
 
+Fetch a custom branch:
+`git fetch origin branchname:local_branchname`
+
 Pull:
 `git pull`
 
