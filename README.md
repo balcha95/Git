@@ -157,7 +157,7 @@ True merge (fast forward):
 Merge to master (only if fast forward):
 `git merge --ff-only branchname`
 
-Merge to master (forc a new commit):
+Merge to master (force a new commit):
 `git merge --no-ff branchname`
 
 Stop merge (in case of conflicts):
