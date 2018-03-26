@@ -169,6 +169,13 @@ Stop merge (in case of conflicts):
 Merge only one specific commit: 
 `git cherry-pick 073791e7`
 
+Rebase:
+`git checkout branchname` » `git rebase master`
+or:
+`git merge master branchname`
+(The rebase moves all of the commits in `master` onto the tip of `branchname`.)
+
+
 Stash
 -----------
 
