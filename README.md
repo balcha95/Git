@@ -356,8 +356,11 @@ Compare:
 Push (set default with `-u`):
 `git push -u origin master`
 
-Push to default:
+Push:
 `git push origin master`
+
+Force-Push:
+`git push origin master --force`
 
 Fetch:
 `git fetch origin`
