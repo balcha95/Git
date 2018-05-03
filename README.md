@@ -111,10 +111,7 @@ Delete untracked files (not staging):
 Unstage (undo adds):
 `git reset HEAD index.html`
 
-Commit to most recent commit:
-`git commit --amend -m "Message"`
-
-Update most recent commit message:
+Update most recent commit (also update the commit message):
 `git commit --amend -m "New Message"`
 
 
