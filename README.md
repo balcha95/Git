@@ -7,7 +7,7 @@ Global Settings
 - Related Setup: https://gist.github.com/hofmannsven/6814278
 - Related Pro Tips: https://ochronus.com/git-tips-from-the-trenches/
 - Interactive Beginners Tutorial: http://try.github.io/
-- GitHub Cheatsheet: https://services.github.com/on-demand/downloads/github-git-cheat-sheet/
+- Git Cheatsheet by GitHub: https://services.github.com/on-demand/downloads/github-git-cheat-sheet/
 
 
 Reminder
