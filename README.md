@@ -337,11 +337,20 @@ Show remote:
 Show remote details:
 `git remote -v`
 
-Add remote origin from GitHub project:
-`git remote add origin https://github.com/user/project.git`
+Add remote upstream from GitHub project:
+`git remote add upstream https://github.com/user/project.git`
 
-Add remote origin from existing empty project on server:
-`git remote add origin ssh://root@123.123.123.123/path/to/repository/.git`
+Add remote upstream from existing empty project on server:
+`git remote add upstream ssh://root@123.123.123.123/path/to/repository/.git`
+
+Fetch:
+`git fetch upstream`
+
+Fetch a custom branch:
+`git fetch upstream branchname:local_branchname`
+
+Merge fetched commits:
+`git merge upstream/master`
 
 Remove origin:
 `git remote rm origin`
@@ -362,22 +371,13 @@ Push:
 `git push origin master`
 
 Force-Push:
-`git push origin master --force`
-
-Fetch:
-`git fetch origin`
-
-Fetch a custom branch:
-`git fetch origin branchname:local_branchname`
+`git push origin master --force
 
 Pull:
 `git pull`
 
 Pull specific branch:
 `git pull origin branchname`
-
-Merge fetched commits:
-`git merge origin/master`
 
 Clone to localhost:
 `git clone https://github.com/user/project.git` or:
