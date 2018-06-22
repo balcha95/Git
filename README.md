@@ -375,6 +375,9 @@ Pull:
 Pull specific branch:
 `git pull origin branchname`
 
+Fetch a pull request on GitHub by its ID and create a new branch:
+`git fetch upstream pull/ID/head:new-pr-branch`
+
 Clone to localhost:
 `git clone https://github.com/user/project.git` or:
 `git clone ssh://user@domain.com/~/dir/.git`
