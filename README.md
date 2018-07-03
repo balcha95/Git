@@ -357,6 +357,9 @@ Show remote branches:
 Show all branches:
 `git branch -a`
 
+Create and checkout branch from a remote branch:
+`git checkout -b local_branchname upstream/remote_branchname`
+
 Compare:
 `git diff origin/master..master`
 
