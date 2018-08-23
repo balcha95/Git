@@ -171,7 +171,7 @@ or:
 `git merge master branchname`
 (The rebase moves all of the commits in `master` onto the tip of `branchname`.)
 
-Abort rebase:
+Cancel rebase:
 `git rebase --abort`
 
 Squash multiple commits into one:
