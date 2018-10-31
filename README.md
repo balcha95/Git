@@ -59,6 +59,9 @@ Get custom file ready to commit:
 Commit changes:
 `git commit -m "Message"`
 
+Commit changes with title and description:
+`git commit -m "Title" -m "Description..."`
+
 Add and commit in one step:
 `git commit -am "Message"`
 
