@@ -360,7 +360,7 @@ Remove origin:
 Show remote branches:
 `git branch -r`
 
-Show all branches:
+Show all branches (remote and local):
 `git branch -a`
 
 Create and checkout branch from a remote branch:
