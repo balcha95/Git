@@ -201,6 +201,12 @@ Use custom stash item and drop it:
 Use custom stash item and do not drop it:
 `git stash apply stash@{0}`
 
+Use custom stash item and index:
+`git stash apply --index`
+
+Create branch from stash: 
+`git stash branch new_branch`
+
 Delete custom stash item:
 `git stash drop stash@{0}`
 
