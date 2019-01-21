@@ -101,6 +101,9 @@ Mixed reset (move HEAD and change staging to match repo; does not affect working
 Hard reset (move HEAD and change staging dir and working dir to match repo):
 `git reset --hard 073791e7dd71b90daa853b2c5acc2c925f02dbc6`
 
+Hard reset of a single file (`@` is short for `HEAD`):
+`git checkout @ -- index.html`
+
 Update & Delete
 -----------
 
