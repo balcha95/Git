@@ -168,6 +168,9 @@ Stop merge (in case of conflicts):
 Stop merge (in case of conflicts):
 `git reset --merge` // prior to v1.7.4
 
+Undo local merge that hasn't been pushed yet:
+`git reset --hard origin/master`
+
 Merge only one specific commit: 
 `git cherry-pick 073791e7`
 
@@ -182,6 +185,9 @@ Cancel rebase:
 
 Squash multiple commits into one:
 `git rebase -i HEAD~3` ([source](https://www.devroom.io/2011/07/05/git-squash-your-latests-commits-into-one/))
+
+Squash-merge a feature branch (as one commit):
+`git merge --squash branchname` (commit afterwards)
 
 Stash
 -----------
