@@ -412,6 +412,9 @@ Clone to localhost folder:
 Clone specific branch to localhost:
 `git clone -b branchname https://github.com/user/project.git`
 
+Clone with token authentication (in CI environment):
+`git clone https://oauth2:<token>@gitlab.com/username/repo.git`
+
 Delete remote branch (push nothing):
 `git push origin :branchname` or:
 `git push origin --delete branchname`
