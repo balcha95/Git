@@ -1,4 +1,4 @@
-# Using Git
+# Git
 
 ## Global Settings
 - Related Setup: https://gist.github.com/hofmannsven/6814278
