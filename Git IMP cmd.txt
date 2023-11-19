@@ -1,0 +1,172 @@
+Git is the most popular source code management tool. It is one of the most prominent version control systems (VCS) today that is widely used to handle small and large projects efficiently. It helps in tracking changes in source code, enabling different users to work together and handles large projects efficiently.
+
+Git Workflow Commands :		
+
+git fork 			==> used to copy the complete remote repo at the remote level 
+git clone			==> copy the complete repo from remote to local machine
+git add 			==> add the changes from working dir to staging area
+git commit 	                ==> commits the changes from staging area to local repo.
+git push 			==> used to push the changes from local to remote repo.
+git fetch                       ==> used to check, if there is any incremental changes in remote repo and update the local repo it will never directly impact the working dir.
+git pull			==> used to check, if there is any incremental changes in remote repo and  directly update the changes in local repo and the working  dir.
+                       
+git reset- will just reset to previous commit. It will never create new commit point. 						
+						
+git reset --soft 	
+It just move the HEAD pointer to previous commit point. Changes will be retained in staging area and Working dir. 
+
+git reset --mixed
+It just move the HEAD pointer to previous commit point. Changes will be removed from staging area. but, retained in Working dir.                                          
+
+git reset --hard 
+It move the HEAD pointer to previous commit point. Changes will be completely removed from staging area and Working dir.	
+
+git revert- Is a command to undo the changes made by a specific commit. It creates a new commit that undoes the changes while preserving the commit history.
+						
+Rebase ::: 
+	
+- Is one of the best practises to keep your current branch in-sync with your target branch.
+- Always issue rebase command before you merge the changes into target branch.
+
+Squash :::: Combine all the commits and create a new commit point and merge into the target.
+
+cherry-pick is a command that allows you to pick a specific commit from one branch and apply it to another branch			
+It's like manually copying changes made in one commit and pasting them onto another branch. It's useful when you want to bring specific changes from one branch to another without merging the entire branch.
+
+Git Bisect-Git Bisect we use to pick bad commit out of all good commits.	
+		
+Merge Confict
+   When the same file is updated by more than one users in the same lines, we get merge conflict.
+
+How to fix Merge Conflict ?
+	- Identify the file(s) which is causing the conflict.
+	- Discuss with the team who made the changes, review and finalize the changes to be merged into target branch 
+	- Update the file 
+	- Add and Commit the changes.
+
+To Prevent Merge Conflict :
+	- Review the chanages before Merge.
+	- Always pull/fetch the changes into the current branch before merging to target branch.
+
+git stash       ==> Temporarily stores changes that are not ready to be committed, 
+                allowing you to switch to a different branch or commit without losing your work.
+
+git init 	==>   is used to initialize the local repo.
+git status	==>   used to get the current status of the git repository
+git branch      ==>   Shows a list of all local branches and highlights the current branch.
+Example: git branch
+git checkout==>     Switches to a different branch or commit.
+Example: git checkout my-feature-branch or git checkout 55c7325
+git log     ==> 
+git merge   ==> Combines changes from two or more branches.
+Example: git merge my-feature-branch
+git add     ==> add the changes from working dir. to staging area
+                You can use it with specific filenames, or with the . symbol to add all changes in the current directory.
+Example: git add filename.txt or git add .
+git commit 	==> commits the changes from staging area to local repo.
+                You should always include a descriptive commit message to explain the changes you've made.
+Example: git commit -m "Added new feature to app"
+
+git fork 	==> used to copy the complete remote repo at the remote level 
+
+git clone	==> copy the complete repo from remote to local machine (preferably do this for the first time) 
+Example: git clone https://github.com/example/example.git  
+                                                   
+git push    ==> used to push the changes from local to remote repo.
+
+git fetch   ==> used to check, if there are any incremental changes in remote repo and 
+                update the local repo it will never directly impact the working dir. Hence if needed, use git merge or                                                                                                                     checkout or pull to update working dir.			
+git pull	==> used to check, if there are any incremental changes in remote repo and 
+                directly update the changes in local repo and the working dir.
+git reset --soft 	
+		--> It just move the HEAD pointer to previous commit point. 
+		Changes will be retained in staging area and Working dir. 
+git reset --mixed
+		--> It just move the HEAD pointer to previous commit point. 
+		Changes will be removed from staging area. but, retained in Working dir. Is default.
+git reset --hard 
+		--> It move the HEAD pointer to previous commit point. 
+		Changes will be completely removed from staging area and Working dir.
+        risky one. It is NOT recommended.
+		
+git revert will create new commit point.
+git reset will just reset to previous commit. It will never create new commit point.
+
+git stash   ==> Temporarily stores changes that are not ready to be committed, 
+                allowing you to switch to a different branch or commit without losing your work.
+
+Example: git stash  
+git stash save "message": Temporarily stores changes with a message that describes the changes.
+Example: git stash save "Work in progress on new feature"
+
+git stash list: Shows a list of all stashes that have been created.
+Example: git stash list
+
+git stash pop: Applies the most recent stash and removes it from the stash list.
+Example: git stash pop
+
+git stash apply stash@{n}: Applies a specific stash by specifying its index number.
+Example: git stash apply stash@{1}
+
+git stash drop: Deletes the most recent stash.
+Example: git stash drop
+
+git stash clear: Deletes all stashes.
+Example: git stash clear
+
+Sure! Here are some Git commands for branching, merging, stashing, rebasing, reverting, and resetting:
+
+Branching
+
+git branch: Lists all branches in the repository.
+Example: git branch
+
+git branch branch_name: Creates a new branch.
+Example: git branch new_feature
+
+git checkout branch_name: Switches to a different branch.
+Example: git checkout new_feature
+
+git branch -d branch_name: Deletes a branch.
+Example: git branch -d new_feature
+
+Merging
+
+git merge branch_name: Merges changes from one branch into another.
+Example: git merge new_feature
+
+git merge --no-ff branch_name: Merges changes from one branch into another with a merge commit, even if it's not necessary.
+Example: git merge --no-ff new_feature
+
+Stashing
+
+git stash: Temporarily stores changes that are not ready to be committed, allowing you to switch to a different branch or commit without losing your work.
+Example: git stash
+
+git stash pop: Applies the most recent stash and removes it from the stash list.
+Example: git stash pop
+
+Rebasing
+
+git rebase branch_name: Applies changes from one branch onto another branch.
+Example: git rebase master
+
+git rebase -i branch_name: Allows you to interactively rebase changes from one branch onto another.
+Example: git rebase -i master
+
+Reverting
+
+git revert commit_hash: Creates a new commit that undoes changes from a previous commit.
+Example: git revert 123abc
+
+git revert HEAD~2: Creates a new commit that undoes changes from the last two commits.
+Example: git revert HEAD~2
+
+Resetting
+git reset file_name: Removes changes from the staging area.
+Example: git reset index.html
+
+git reset --hard commit_hash: Resets the repository to a specific commit and discards all changes since that commit.
+Example: git reset --hard 123abc
+
+
